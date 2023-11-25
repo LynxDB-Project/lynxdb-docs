@@ -2,10 +2,11 @@ site_name: LynxDB 数据库
 
 site_url: https://lynxdb.bailizhang.com/
 
-repo_url: https://github.com/LynxDB-Project/lynxdb-docs.git
+repo_url: https://github.com/LynxDB-Project/lynxdb-docs
+edit_uri: edit/main/docs/
 
 nav:
-  - 简介: intro.md
+  - 简介: index.md
   - Java 客户端: java_client.md
   - Spring Boot: spring_boot.md
   - 命令行: cmd.md
