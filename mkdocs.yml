@@ -1,4 +1,4 @@
-site_name: LynxDB 数据库
+site_name: LynxDB 数据库官网
 
 site_url: https://lynxdb.bailizhang.com/
 
@@ -12,6 +12,7 @@ nav:
   - 命令行: cmd.md
   - 源码相关: source.md
   - 文件格式: file_format.md
+  - 感谢捐赠: donate.md
 
 theme:
   name: readthedocs
@@ -24,7 +25,7 @@ site_description: LynxDB 是一个轻量级的、由 Java 语言编写的、基�
 
 site_author: Baili Zhang
 
-copyright: <p>Copyright &copy; 2023 <a href="/">bailizhang.com</a></p><p>备案号：<a href="https://beian.miit.gov.cn">沪ICP备2023018496号-1</a></p>
+copyright: <p><b>欢迎捐赠：</b>请备注捐赠人称呼，将会在捐赠页面展示。</p><p>支付宝：<img src="/img/alipay.jpg" alt="支付宝" /></p><p>微信：<img src="/img/wechat_pay.jpg" alt="微信" /></p><p>Copyright &copy; 2023 <a href="/">bailizhang.com</a></p><p>备案号：<a href="https://beian.miit.gov.cn">沪ICP备2023018496号-1</a></p>
 
 extra_css:
   - css/style.css
