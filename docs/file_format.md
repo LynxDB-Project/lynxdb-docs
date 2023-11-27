@@ -8,6 +8,7 @@ LogGroup 的序列号从 1 开始，逐次递增。
 
 ## LogRegion 文件
 
+魔数：1002
 文件后缀：`.lgr`
 
 **文件格式**
@@ -37,6 +38,13 @@ LogGroup 的序列号从 1 开始，逐次递增。
 | 数据条目开始位置（Data Begin） | 4 bytes | int 类型  |
 | 数据条目长度（Data Length）    | 4 bytes | int 类型  |
 | CRC 校验和（CRC）              | 8 bytes | long 类型 |
+
+**Data Entry**
+
+| 字段              | 长度    | 说明        |
+| ----------------- | ------- | ----------- |
+| 数据内容          | 若干    | byte[] 类型 |
+| CRC 校验和（CRC） | 8 bytes | long 类型   |
 
 ## SSTable 格式
 
