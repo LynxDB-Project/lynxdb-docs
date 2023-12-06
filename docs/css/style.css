@@ -7,3 +7,18 @@ footer img {
   width: 150px;
   height: 150px;
 }
+
+.section blockquote {
+  background-color: #d8f5d8;
+  border: 2px solid #afdfaf;
+  box-sizing: border-box;
+  margin: 0 0 24px;
+  padding: 0 16px;
+  color: #444;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.section blockquote p {
+  margin: 12px 0;
+}

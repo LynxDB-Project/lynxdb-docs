@@ -8,7 +8,9 @@ edit_uri: edit/main/docs/
 nav:
   - 简介: index.md
   - Java 客户端: java_client.md
+  - Socket 框架: socket.md
   - Spring Boot: spring_boot.md
+  - Arena 内存管理: arena.md
   - 命令行: cmd.md
   - 源码相关: source.md
   - 文件格式: file_format.md
