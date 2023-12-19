@@ -62,23 +62,23 @@ LogGroup 的序列号从 1 开始，逐次递增。
 
 **Meta 区**
 
-| 字段                       | 长度    | 说明        |
-| -------------------------- | ------- | ----------- |
-| Meta Region Length         | 4 bytes | int 类型    |
-| 魔数（Magic Number）       | 4 bytes | int 类型    |
-| Mem Table Size             | 4 bytes | int 类型    |
-| Max Key Size               | 4 bytes | int 类型    |
-| Key Size                   | 4 bytes | int 类型    |
-| Bloom Filter Region Length | 4 bytes | int 类型    |
-| First Index Region Length  | 4 bytes | int 类型    |
-| Second Index Region Length | 4 bytes | int 类型    |
-| Data Region Length         | 4 bytes | int 类型    |
-| Meta Header CRC 校验和     | 8 bytes | long 类型   |
-| Begin Key Length           | 4 bytes | int 类型    |
-| Begin Key                  | 若干    | byte[] 类型 |
-| End Key Length             | 4 bytes | int 类型    |
-| End Key                    | 若干    | byte[] 类型 |
-| CRC 校验和（CRC）          | 8 bytes | long 类型   |
+| 字段                       | 长度    | 说明                                                          |
+| -------------------------- | ------- | ------------------------------------------------------------- |
+| Meta Region Length         | 4 bytes | int 类型，Meta 区域的总长度。                                 |
+| 魔数（Magic Number）       | 4 bytes | int 类型。                                                    |
+| Mem Table Size             | 4 bytes | int 类型，Memory Table 的大小，也就是二级索引一个区域的大小。 |
+| Max Key Amount             | 4 bytes | int 类型，当前 SSTable 最大能容纳的 Key 的数量。              |
+| Key Amount                 | 4 bytes | int 类型，当前 SSTable 当前容纳的所有 Key 的数量。            |
+| Bloom Filter Region Length | 4 bytes | int 类型，布隆过滤器区域的长度。                              |
+| First Index Region Length  | 4 bytes | int 类型，一级索引区域的长度。                                |
+| Second Index Region Length | 4 bytes | int 类型，二级索引区域的长度。                                |
+| Data Region Length         | 4 bytes | int 类型，数据区域的长度。                                    |
+| Meta Header CRC 校验和     | 8 bytes | long 类型，Meta Header（以上部分）的 CRC 校验和               |
+| Begin Key Length           | 4 bytes | int 类型，Begin Key 的长度。                                  |
+| Begin Key                  | 若干    | byte[] 类型。                                                 |
+| End Key Length             | 4 bytes | int 类型，End Key 的长度。                                    |
+| End Key                    | 若干    | byte[] 类型。                                                 |
+| CRC 校验和（CRC）          | 8 bytes | long 类型，Begin Key 和 End Key 区域的校验和                  |
 
 **Bloom Filter 区**
 
@@ -88,13 +88,12 @@ LogGroup 的序列号从 1 开始，逐次递增。
 
 First Index Entry 格式：
 
-| 字段                       | 长度    | 说明        |
-| -------------------------- | ------- | ----------- |
-| Length                     | 4 bytes | int 类型    |
-| Begin Key Length           | 4 bytes | int 类型    |
-| Begin Key                  | 若干    | byte[] 类型 |
-| Begin Key 二级索引的偏移量 | 4 bytes | int         |
-| CRC 校验和（CRC）          | 8 bytes | long 类型   |
+| 字段                       | 长度    | 说明                                          |
+| -------------------------- | ------- | --------------------------------------------- |
+| Begin Key Length           | 4 bytes | int 类型，Begin Key 的长度                    |
+| Begin Key                  | 若干    | byte[] 类型。                                 |
+| Begin Key 二级索引的偏移量 | 4 bytes | int 类型，Begin Key 二级索引的索引（idx）值。 |
+| CRC 校验和（CRC）          | 8 bytes | long 类型。                                   |
 
 **Second Index 区**
 
