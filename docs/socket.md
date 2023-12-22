@@ -2,10 +2,6 @@
 
 LynxDB 基于 Java NIO 封装了自己的 Socket 框架，主要使用方法：
 
-> 问：为什么不使用 Netty 作为 Socket 框架？
->
-> 答：因为有些代码，你自己不写，就永远不知道性能损失在哪里！
-
 ## 创建 Socket 服务器
 
 ```java
