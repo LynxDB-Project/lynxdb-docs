@@ -112,7 +112,6 @@ Key Entry 格式：
 
 | 字段               | 长度    | 说明         |
 | ------------------ | ------- | ------------ |
-| 删除标志           | 1 bytes |              |
 | Key Length         | 4 bytes | int 类型     |
 | Key                | 若干    | bytes[] 类型 |
 | Value Global Index | 4 bytes | int 类型     |
