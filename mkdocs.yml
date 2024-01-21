@@ -11,7 +11,6 @@ nav:
   - Rust 客户端: rust_client.md
   - Socket 框架: socket.md
   - Spring Boot: spring_boot.md
-  - 数据传输协议: ldtp.md
   - Arena 内存管理: arena.md
   - 命令行: cmd.md
   - 源码相关: source.md

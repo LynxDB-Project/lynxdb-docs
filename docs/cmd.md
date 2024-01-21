@@ -42,6 +42,8 @@ exist [key] [columnFamily] [column]
 
 从 beginKey 往后范围查找：
 
+**注意：返回结果不包括 beginKey。**
+
 ```shell
 range-next [columnFamily] [mainColumn] [beginKey] [limit]
 ```
@@ -49,6 +51,8 @@ range-next [columnFamily] [mainColumn] [beginKey] [limit]
 ## Range Before 命令
 
 从 endKey 往前范围查找：
+
+**注意：返回结果不包括 endKey。**
 
 ```shell
 range-before [columnFamily] [mainColumn] [endKey] [limit]
