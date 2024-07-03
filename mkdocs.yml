@@ -31,4 +31,5 @@ site_author: Baili Zhang
 copyright: <p><b>欢迎捐赠：</b>请备注捐赠人称呼，将会在捐赠页面展示。</p><p>支付宝：<img src="/img/alipay.jpg" alt="支付宝" /></p><p>微信：<img src="/img/wechat_pay.jpg" alt="微信" /></p><p>Copyright &copy; 2023 <a href="/">bailizhang.com</a></p><p>备案号：<a href="https://beian.miit.gov.cn">沪ICP备2023018496号-1</a></p>
 
 extra_css:
+  - css/font.css
   - css/style.css

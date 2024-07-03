@@ -1,0 +1,11 @@
+@font-face {
+  font-family: AlimamaFangYuanTiVF;
+  src: url(/fonts/AlimamaFangYuanTiVF-Thin.woff2);
+}
+
+*,
+h1,
+h2,
+h3 {
+  font-family: AlimamaFangYuanTiVF;
+}
